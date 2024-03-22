@@ -2,8 +2,22 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
+}
+
+/* Stylin for all clickable hyperlinks. */
+a {
+  all: unset;
+  cursor: pointer;
+
+  transition: ease-in 0.2s;
+}
+
+a:hover {
+  color: var(--secondary-color);
+
+  transition: ease-in 0.2s;
 }
 
 :root {
@@ -136,6 +150,8 @@ aside .icon-with-text {
   white-space: nowrap;
   display: inline-block;
   margin-left: 10px;
+  color: var(--primary-color);
+  font-weight: bold;
 }
 
 .icon-with-text:hover #text {
